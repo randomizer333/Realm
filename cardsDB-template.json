@@ -1,0 +1,9 @@
+{
+  CardName:{
+    attack:0,
+    defense:0,
+    type:["land","unit","item","power","building"],
+    color_class:["blue","red","green","black","orange"],
+    
+  }
+}
