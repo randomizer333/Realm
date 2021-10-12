@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+
+let pogoj1 = true;
+let pogoj2 = true;
+
+pogoj1||pogoj2?console.log("vsaj en pogoj"):console.log("noden pogoj")
+
+
+</script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Marko Šmid" content="playing card template">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <title>REALM playing card template</title>
+
+    <style>
+        * {
+            /*border: 1px dotted red;*/
+            font-family: Goblin One;
+        }
+
+        body {
+            background-color: rgb(41, 40, 40);
+        }
+
+        #card {
+            border: 2px solid black;
+            float: left;
+            width: 6.4cm;
+            height: 8.9cm;
+            padding: 1%;
+            background-color: gray;
+            border-radius: 7px;
+        }
+
+        #bezel {
+            border: 2px solid rgb(180, 180, 180);
+            float: left;
+            width: 98%;
+            height: 98%;
+            /*padding: 1%;*/
+            background-color: rgb(116, 61, 17);
+            border-radius: 12px;
+        }
+
+        #typelogo {
+            border: 2px solid black;
+            width: 1cm;
+            height: 1cm;
+            border-radius: 20px;
+            margin-top: 2px;
+            margin-left: 2px;
+            float: left;
+            background-color: chartreuse;
+            position: absolute;
+            top: 10px;
+            left: 10px
+        }
+
+        #image {
+            width: 98%;
+            /*height: 55%;*/
+            border: 2px solid rgb(116, 61, 17);
+            border-radius: 10px;
+            margin: auto;
+            background-color: rgb(66, 66, 66);
+        }
+
+        img {
+            width: 100%;
+            height: 55%;
+        }
+
+        #name {
+            width: 94%;
+            height: 6.3%;
+            border: 2px solid rgb(116, 61, 17);
+            /*border-radius: 10px;*/
+            margin: auto;
+            padding-left: 2%;
+        }
+
+        #text {
+            padding: 2%;
+            width: 94%;
+            height: 42.6%;
+            border: 2px solid rgb(116, 61, 17);
+            border-radius: 10px;
+            margin: auto;
+            background-color: rgb(0, 95, 0);
+            /*set by card type*/
+        }
+
+        #triangle {
+            width: 0;
+            height: 0;
+            border-left: 13px solid transparent;
+            border-right: 13px solid transparent;
+            border-bottom: 21px solid red;
+            float: right;
+            text-align: right;
+            padding-left: -10px;
+            /*padding-right: 20px;*/
+        }
+
+        #square {
+            width: 20px;
+            height: 20px;
+            float: right;
+            border: 1px solid black;
+            background-color: blue;
+            text-align: center;
+        }
+
+        #circle {
+            float: right;
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            background-color: orange;
+            border-radius: 70%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="card">
+        <div id="typelogo">
+            logo
+        </div>
+        <div id="bezel">
+            <div id="circle">
+                11
+            </div>
+            <div id="triangle">
+                2
+            </div>
+            <div id="square">
+                3
+            </div>
+            <div id="image">
+                slika
+                <img
+                    src="https://scentofagamer.files.wordpress.com/2014/11/plains_alara_michaelkomarck.jpg">
+            </div>
+            <div id="name">
+                ime karte
+            </div>
+            <div id="text">
+                besedilo karte
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <div id="bezel">
+            <div id="image">
+                splošna navodila
+            </div>
+            <div id="name">
+                ime karte
+            </div>
+            <div id="text">
+                navodila:</br>
+                tipa karte
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
